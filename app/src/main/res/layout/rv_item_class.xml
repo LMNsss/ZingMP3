@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E3DBF1"
+            android:padding="10dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.97" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_Zing_MP3"
+                android:text="Zing MP3"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#985EFF"
+                app:layout_constraintStart_toStartOf="@id/guide_line_3"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_class"
+                app:layout_constraintStart_toEndOf="@id/tv_Zing_MP3"
+                app:layout_constraintTop_toTopOf="@id/tv_Zing_MP3"
+                app:layout_constraintBottom_toBottomOf="@id/tv_Zing_MP3"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="6dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#985EFF"
+                    android:letterSpacing="0.1"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="PLUS"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/tv_Zing_MP3"
+                app:layout_constraintBottom_toBottomOf="@id/tv_Zing_MP3"
+                android:id="@+id/ic_go_next"
+                app:layout_constraintEnd_toEndOf="@id/guide_line_97"
+                android:src="@drawable/ic_cloud_off_black_24dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/guide_line_3"
+                app:layout_constraintTop_toBottomOf="@id/tv_Zing_MP3"
+                android:id="@+id/tv_price_class"
+                android:text="19,000 cho 3 tháng đầu"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_conntent"
+                app:layout_constraintTop_toBottomOf="@id/tv_price_class"
+                app:layout_constraintStart_toStartOf="@id/guide_line_3"
+                app:layout_constraintEnd_toEndOf="@id/guide_line_97"
+                android:layout_marginTop="10dp"
+                android:text="Nghe nhạc với chất lượng cao nhất, không quảng cáo"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_conntent"
+                app:layout_constraintStart_toStartOf="@id/guide_line_3"
+                app:layout_constraintEnd_toEndOf="@id/guide_line_97"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nghe nhạc không quảng cáo"
+                    android:drawableTop="@drawable/ic_cloud_off_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:textAlignment="center"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nghe và tải nhạc Lossless"
+                    android:drawableTop="@drawable/ic_cloud_off_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:textAlignment="center"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lưu trữ nhạc không giới hạn"
+                    android:drawableTop="@drawable/ic_cloud_off_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:textAlignment="center"/>
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
